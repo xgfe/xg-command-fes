@@ -3,12 +3,13 @@ const path = require('path');
 const shell = require('shelljs');
 const version = require('./package.json').version;
 
-const run = require('./lib/run');
+const run = require('./cli/fis');
 
 
 exports.name = 'fes';
 exports.desc = 'xg fes pulgin';
 exports.options = {
+  'env <config>': 'stringify env.config.json file',
   '-v, --version': 'version',
   '-h, --help': 'print this help message'
 };

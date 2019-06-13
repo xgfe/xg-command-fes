@@ -1,8 +1,11 @@
 {
   "name": "xg-command-fes",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
+  "bin": {
+    "xg-fes": "./bin/xg-fes.js"
+  },
   "scripts": {
     "release": "./build/release.sh"
   },
