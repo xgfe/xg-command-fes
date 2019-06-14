@@ -1,1 +1,0 @@
-ssh -i ./key.pem $@
