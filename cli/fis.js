@@ -13,5 +13,3 @@ exports = module.exports = function(argv, cli, env) {
         fis.log.error(error);
     });
 };
-
-exports.env = require('./env');
