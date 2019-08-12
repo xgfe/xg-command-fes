@@ -10,6 +10,12 @@ exports = module.exports = function(argv, cli, env) {
     fes(fesArgv).then(function (ctx) {
         fis.log.info('success');
     }).catch(function (error) {
-        fis.log.error(error);
+        try {
+            fis.log.on.error(error.message);
+            fis.log.debug(error.stack);
+        } catch (e) {
+        } finally {
+            process.exit(1);
+        }
     });
 };
