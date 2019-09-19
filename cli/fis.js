@@ -8,7 +8,7 @@ exports = module.exports = function(argv, cli, env) {
         configRemote: argv.configRemote,
     };
     fes(fesArgv).then(function (ctx) {
-        fis.log.info('success');
+        fis.log.info('fes success');
     }).catch(function (error) {
         try {
             fis.log.on.error(error.message);

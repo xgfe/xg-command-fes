@@ -31,7 +31,6 @@
     };
 
     fes(fesArgv).then(function (ctx) {
-        console.log('success');
     }).catch(function (error) {
         console.error(error);
         process.exit(1);
